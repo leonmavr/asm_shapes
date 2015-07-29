@@ -1,5 +1,3 @@
-; for nasm comp see this:https://gist.github.com/ameenkhan07/ee8a2cfad1b36f1c5f42
-
 name "shapes"   ; output file name (max 8 chars for DOS compatibility) 
  
 get_key macro 
