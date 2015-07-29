@@ -9,8 +9,8 @@
 ; offsets always relative to BP                
 ; all args and local vars are unsigned int unless otherwise specified
 ;
-;           +4    +6  +8  +10
-;draw_cir ( color, x0, y0, rad)
+;           +4    +6  +8              +10
+;draw_cir ( color, x0, y0, signed int rad)
 ; local vars:
 ; -2    x0		(y centre)
 ; -4    y0		(x centre)
