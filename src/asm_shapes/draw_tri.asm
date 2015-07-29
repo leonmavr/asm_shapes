@@ -2,12 +2,12 @@
 ; draws an isosceles triangle
 ; width is the horizontal difference between 
 ; the two clicks that had been captured
-;			    /\
+;			/\
 ;		       /  \
 ;		      /    \
 ;		     /      \
-;(x0,y0)--> +--------+<--(x1,y1)
-;	        <- width ->
+;	(x0,y0)--> +---------+ <--(x1,y1)
+;	           <- width ->
 ; offsets always relative to BP                
 ; all args and local vars are unsigned int unless otherwise specified
 ;
