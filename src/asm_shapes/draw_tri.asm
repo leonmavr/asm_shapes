@@ -52,11 +52,11 @@ draw_tri proc near
             mov ax, cx
             cmp [bp+10], '0'
             jne skip_rev:
-				neg ax			; orientation downwards
+		neg ax			; orientation downwards
             skip_rev:
             push cx
-			; draw pixel
-			mov cx, bx			; col
+            ; draw pixel
+	    mov cx, bx			; col
             add cx, [bp+4]
             mov dx, ax			; row
             add dx, [bp+6]
