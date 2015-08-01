@@ -47,7 +47,7 @@ endm
     char_newl   dw 0ah
     ; null-trminated strings
     str1        db  'Instructions:', 0dh, 0ah, 0               
-    str2        db  'Key 1 > [1] Rectangle [2] Circle [3] Star [4] Triangle [other] Quit', 0dh, 0ah, 0
+    str2        db  'Key 1 > [1] Rectangle [2] Circle [3] Triangle [4] Star [other] Quit', 0dh, 0ah, 0
     str3        db  'Key 2 > [0-9] Colour', 0dh, 0ah, 0
     str4        db  'Key 3 > For triangle: [0] Normal [1] Reversed', 0dh, 0ah, 0
     str5        db  'Click > Click at two points to draw shape', 0dh, 0ah, 0
