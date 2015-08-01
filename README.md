@@ -27,10 +27,10 @@ to draw 2D shapes.
 * Once the project starts running, it's time to draw a shape. This is accomplished  
   in 4 steps including keystrokes and clicks. Brief instructions are displayed when  
 the program starts to run.
-1. **[key]** Press a key to select shape. There are four available, selected by entering  
-   a number between 1 and 4. Any other key will cause the program to exit.  
-2. **[key]** Press a key to select colour. Colours corresponding from 0 to 9 are documented,  
-   however more can be drawn with a litle bit knowledge of binary arithmetic and palettes.  
+1.  **[key]** Press a key to select shape. There are four available, selected by entering  
+      a number between 1 and 4. Any other key will cause the program to exit.  
+2.  **[key]** Press a key to select colour. Colours corresponding from 0 to 9 are documented,  
+      however more can be drawn with a litle bit knowledge of binary arithmetic and palettes.  
    0. Black
    1. Blue
    2. Green
