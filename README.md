@@ -22,7 +22,7 @@ to draw 2D shapes.
   https://www.dropbox.com/sh/tvg7johwjqhqkkz/AADR9SXBoJdvlKJy-z9sVbyGa?dl=0
 * Open the emulator and open main.asm. Click "emulate" on the menu and when it's  
   finished compiling it will be ready to run.  
-(img1)
+![alt-text](https://github.com/0xLeo/asm_shapes/blob/master/img/img1.png)
 
 ## User Guide
 * Once the project starts running, it's time to draw a shape. This is accomplished  
@@ -84,11 +84,11 @@ MSB       LSB
    the other shapes this is not the shapes due to the difficulty of dealing with floats in  
    this particular language or adding exessive complexity to the program. The definition  
    points are illustrated below.  
-   (img2)
+   ![alt-text](https://github.com/0xLeo/asm_shapes/blob/master/img/img2.png)
 
 ## Testing
 An example output as it being synthesised is shown below.  
-(img3.gif)
+![alt-text](https://github.com/0xLeo/asm_shapes/blob/master/img/img3.gif)
 
 ## Known bugs
 1. When choosing to draw a circle, if the secold click is left of the first one, the program  
