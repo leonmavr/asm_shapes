@@ -84,7 +84,7 @@ MSB       LSB
    the other shapes this is not the shapes due to the difficulty of dealing with floats in  
    this particular language or adding exessive complexity to the program. The definition  
    points are illustrated below.  
-   ![alt-text](https://github.com/0xLeo/asm_shapes/blob/master/img/img2.png)
+   ![alt-text](https://github.com/0xLeo/asm_shapes/blob/master/img/img2.jpg)
 
 ## Testing
 An example output as it being synthesised is shown below.  
