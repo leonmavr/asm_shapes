@@ -58,7 +58,8 @@ key_pressed = colour + 048
 ```
    How do we select the colour, e.g. if we wish to draw in yellow?  
    The range of colours that can be used is from 0 to 0x0f, or 16 in decimal, or 1111 in binary.
-   Therfore the colouris 4 bits wide. The foremost bit contains information about grey, and the  
+   Therfore  
+   the colouris 4 bits wide. The foremost bit contains information about grey, and the  
    next three about RGB. 
 ```
 MSB       LSB
