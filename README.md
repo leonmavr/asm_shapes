@@ -20,7 +20,7 @@ to draw 2D shapes.
 * The source code is compiled and run on the emu8086 emulator, available here:
 (https://www.dropbox.com/sh/tvg7johwjqhqkkz/AADR9SXBoJdvlKJy-z9sVbyGa?dl=0)
 * Open the emulator and open main.asm. Click "emulate" on the menu and when it's  
-finished compiling it will be ready to run.
+finished compiling it will be ready to run.  
 (img1)
 
 ## User Guide
@@ -28,7 +28,7 @@ finished compiling it will be ready to run.
 in 4 steps including keystrokes and clicks. Brief instructions are displayed when  
 the program starts to run.
 1. [key] Press a key to select shape. There are four available, selected by entering  
-a number between 1 and 4. Any other key will cause the program to exit.
+a number between 1 and 4. Any other key will cause the program to exit.  
 2. [key] Press a key to select colour. Colours corresponding from 0 to 9 are documented,  
 however more can be drawn with a litle bit knowledge of binary arithmetic and palettes.  
   0. Black
@@ -57,27 +57,29 @@ The range of colours that can be used is from 0 to 0x0f, or 16 in decimal, or 11
 Therfore the colouris 4 bits wide. The foremost bit contains information about grey, and the  
 next three about RGB. 
 ```
-   MSB       LSB
-    v         v       
-   +--+--+--+--+
-   |Gr|R |G |B |
-   +--+--+--+--+
+MSB       LSB
+ v         v       
++--+--+--+--+
+|Gr|R |G |B |
++--+--+--+--+
 ```
 Yellow consists of Grey, Red, and Green = 1110b = 14
 Therefore the key we'd have to press is 14 + 48 = 62 = > in ASCII.
-*(end of technical part)*
+*(end of technical part)*  
 3.  [key] The third key is a flag that takes effect only in case triangle has previously  
 been selected.  
-If it is 0, the triangle is drawn pointing upwards otherwis downwards.
+If it is 0, the triangle is drawn pointing upwards otherwis downwards.  
 4.  [click] The program waits for two clicks. These will define the position and size of  
 the shape. For the rectangle, these are the top left and bottom right verticles but for  
 the other shapes this is not the shapes due to the difficulty of dealing with floats in  
 this particular language or adding exessive complexity to the program. The definition  
-points are illustrated below.
+points are illustrated below.  
 (img2)
 
 ## Testing
+An example output as it being synthesised is shown below.  
+(img3.gif)
 
 ## Known bugs
+1. When choosing to draw a circle, if the secold click is left of the first one, the program 
 
-## Related Resources
