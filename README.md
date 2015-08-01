@@ -17,7 +17,8 @@ to draw 2D shapes.
 
 ## Installation
 * Clone the project.
-* The source code is compiled and run on the emu8086 emulator, available here:
+* The source code is compiled and run on the emu8086 emulator, which is  
+  available here:
   https://www.dropbox.com/sh/tvg7johwjqhqkkz/AADR9SXBoJdvlKJy-z9sVbyGa?dl=0
 * Open the emulator and open main.asm. Click "emulate" on the menu and when it's  
   finished compiling it will be ready to run.  
