@@ -82,7 +82,8 @@ An example output as it being synthesised is shown below.
 (img3.gif)
 
 ## Known bugs
-1. When choosing to draw a circle, if the secold click is left of the first one, the program.
+1. When choosing to draw a circle, if the secold click is left of the first one, the program  
+   crashes.
 
 ## Todo
 1. Fix bug 1.
