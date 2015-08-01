@@ -27,20 +27,22 @@ to draw 2D shapes.
 * Once the project starts running, it's time to draw a shape. This is accomplished  
 in 4 steps including keystrokes and clicks. Brief instructions are displayed when  
 the program starts to run.  
-i.  **[key]** Press a key to select shape. There are four available, selected by entering  
+####1.####
+**[key]** Press a key to select shape. There are four available, selected by entering  
       a number between 1 and 4. Any other key will cause the program to exit.  
-ii.  **[key]** Press a key to select colour. Colours corresponding from 0 to 9 are documented,  
+####2.####
+**[key]** Press a key to select colour. Colours corresponding from 0 to 9 are documented,  
       however more can be drawn with a litle bit knowledge of binary arithmetic and palettes.  
-   [0] Black
-   [1] Blue
-   [2] Green
-   [3] Aqua
-   [4] Red
-   [5] Fuschia
-   [6] Dark orange/ light brown
-   [7] Grey (light)
-   [8] Grey (dark)
-   [9] Steel Blue
+   [0] Black  
+   [1] Blue  
+   [2] Green  
+   [3] Aqua  
+   [4] Red  
+   [5] Fuschia  
+   [6] Dark orange/ light brown  
+   [7] Grey (light)  
+   [8] Grey (dark)  
+   [9] Steel Blue  
 
 *(skip this part if you're not interested in techinal details)*  
    Drawing a colour not on this list is a bit trickier. Some explanation in the procedure to  
@@ -69,10 +71,12 @@ MSB       LSB
   Therefore the key we'd have to press is  
   14 + 48 = 62 = > in ASCII.  
 *(end of technical part)*  
-iii.  **[key]** The third key is a flag that takes effect only in case triangle has previously  
+####3.####
+**[key]** The third key is a flag that takes effect only in case triangle has previously  
       been selected.  
       If it is 0, the triangle is drawn pointing upwards otherwis downwards.  
-iv.  **[click]** The program waits for **two clicks**. These will define the position and size of  
+####4.####
+**[click]** The program waits for **two clicks**. These will define the position and size of  
    the shape. For the rectangle, these are the top left and bottom right verticles but for  
    the other shapes this is not the shapes due to the difficulty of dealing with floats in  
    this particular language or adding exessive complexity to the program. The definition  
