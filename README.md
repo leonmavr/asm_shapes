@@ -71,7 +71,7 @@ MSB       LSB
   Yellow consists of Grey, Red, and Green = 1110b = 14
   Therefore the key we'd have to press is  
   14 + 48 = 62 = > in ASCII.  
-*(end of technical part)* <a id="end"></a>
+*<a id="end">(end of technical part)</a>*  
 #####3.#####
 **[key]** The third key is a flag that takes effect only in case triangle has previously  
       been selected.  
