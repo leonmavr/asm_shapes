@@ -42,7 +42,7 @@ the program starts to run.
    8. Grey (dark)
    9. Steel Blue
 
-*(skip this part if you're not interested in techinal details)*
+*(skip this part if you're not interested in techinal details)*  
    Drawing a colour not on this list is a bit trickier. Some explanation in the procedure to  
    capture a key from the user is needed.  
    Having pressed a key, an interrupt is called and it is saved as char in the al register.  
@@ -64,6 +64,7 @@ MSB       LSB
 |Gr|R |G |B |
 +--+--+--+--+
 ```
+
       Yellow consists of Grey, Red, and Green = 1110b = 14
       Therefore the key we'd have to press is 14 + 48 = 62 = > in ASCII.
 *(end of technical part)*  
