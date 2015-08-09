@@ -1,8 +1,8 @@
 ; draws a circle given its centre (x0, y0) and
 ; point (x0 + r, y0), where r is the radius
 ; method in brief:
-; for xi =  x0:x0+r {
-;	for yi = y0:y0+r {
+; for xi =  x0-r:x0+r {
+;	for yi = y0-r:y0+r {
 ;		if (((xi-x0)^2+(yi-y0)^2) <= r^2) draw(xi, yi)
 ;	}
 ; }
@@ -19,12 +19,13 @@
 ; -10   rad^2
 ; -12   2*rad
 ; -14   temp_sum
+; -16	external loop ctr
 
 draw_cir proc near
     push bp
     mov bp, sp    
     push bx
-    sub sp, 14
+    sub sp, 16
     push bx
     
     cmp [bp+10], 0
@@ -58,11 +59,11 @@ draw_cir proc near
         mov cx, [bp-12]
         loop3:
         ; draw a pixel  
-        mov ax, cx
+        mov [bp-16], cx
         push cx
         draw:
 
-            push ax
+            ;push ax
             mov ax,[bp+10] 		; rad
             sub ax, cx
             
@@ -80,7 +81,7 @@ draw_cir proc near
             cmp [bp-14], ax		; if inside the disk...
             jg skip
   
-				pop ax
+				mov ax, [bp-16]
 
 				push cx
 			   
