@@ -12,7 +12,7 @@ to draw 2D shapes.
  shapes.    
 * I then included these algorithms in my own functions, so I was able to draw a number  
   of shapes of a variety of size and colours.  
-* Added some user interaction features. The user was then able to selet what shape  
+* Added some user interaction features. The user was then able to select what shape  
   to draw and where exactly on the screen.
 
 ## Installation
@@ -34,19 +34,19 @@ the program starts to run.
   a number between 1 and 4. Any other key will cause the program to exit.    
 #####2.#####
 **[key]** Press a key to select colour. Colours corresponding from 0 to 9 are documented,  
-      however more can be drawn with a litle bit knowledge of binary arithmetic and palettes.  
+      however more can be drawn with a little bit knowledge of binary arithmetic and palettes.  
     [0] Black  
     [1] Blue  
     [2] Green  
     [3] Aqua  
     [4] Red  
-    [5] Fuschia  
+    [5] Fuchsia  
     [6] Dark orange/ light brown  
     [7] Grey (light)  
     [8] Grey (dark)  
     [9] Steel Blue  
 
-*([skip](#end) this part if you're not interested in techinal details)*  
+*([skip](#end) this part if you're not interested in technical details)*  
    Drawing a colour not on this list is a bit trickier. Some explanation in the procedure to  
    capture a key from the user is needed.  
    Having pressed a key, an interrupt is called and it is saved as char in the al register.  
@@ -59,8 +59,8 @@ key_pressed = colour + 048
 ```
    How do we select the colour, e.g. if we wish to draw in yellow?  
    The range of colours that can be used is from 0 to 0x0f, or 16 in decimal, or 1111 in binary.
-   Therfore  
-   the colouris 4 bits wide. The foremost bit contains information about grey, and the  
+   Therefore  
+   the colour is 4 bits wide. The foremost bit contains information about grey, and the  
    next three about RGB. 
 ```
 MSB       LSB
@@ -77,12 +77,12 @@ MSB       LSB
 #####3.#####
 **[key]** The third key is a flag that takes effect only in case triangle has previously  
       been selected.  
-      If it is 0, the triangle is drawn pointing upwards otherwis downwards.  
+      If it is 0, the triangle is drawn pointing upwards otherwise downwards.  
 #####4.#####
 **[click]** The program waits for **two clicks**. These will define the position and size of  
-   the shape. For the rectangle, these are the top left and bottom right verticles but for  
+   the shape. For the rectangle, these are the top left and bottom right vertices but for  
    the other shapes this is not the shapes due to the difficulty of dealing with floats in  
-   this particular language or adding exessive complexity to the program. The definition  
+   this particular language or adding excessive complexity to the program. The definition  
    points are illustrated below.  
    ![alt-text](https://github.com/0xLeo/asm_shapes/blob/master/img/img2.jpg)
 
@@ -91,10 +91,10 @@ An example output as it being synthesised is shown below.
 ![alt-text](https://github.com/0xLeo/asm_shapes/blob/master/img/img3.gif)
 
 ## Known bugs
-1. When choosing to draw a circle, if the secold click is left of the first one, the program  
+1. When choosing to draw a circle, if the second click is left of the first one, the program  
    crashes.
 
 ## Todo
 1. Fix bug 1.
 2. More colours (all 16).
-3. Add a background randomiser option, which draws pixels or while shapes at random positions.
+3. Add a background randomiser option, which draws pixels or whole shapes at random positions.
