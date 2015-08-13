@@ -4,7 +4,7 @@
 ## Introduction
 This is a project I wrote when I was teaching myself assembly. It is written in 8086  
 processor 16-bit DOS assembler language and as the title suggests uses BIOS interrupts  
-to draw 2D shapes.
+to draw 2D shapes. 
 
 ## Motivation
 * The project started when found out the interrupt routine that draws a single pixel.   
@@ -13,13 +13,13 @@ to draw 2D shapes.
 * I then included these algorithms in my own functions, so I was able to draw a number  
   of shapes of a variety of size and colours.  
 * Added some user interaction features. The user was then able to select what shape  
-  to draw and where exactly on the screen.
+  to draw and where exactly on the screen.  
+* Its memory requirements are minimal - the emulator allocates it only 1 MB of RAM.  
 
 ## Installation
 * Clone the project.
 * The source code is compiled and run on the emu8086 emulator, which is  
-  available here:
-  https://www.dropbox.com/sh/tvg7johwjqhqkkz/AADR9SXBoJdvlKJy-z9sVbyGa?dl=0
+  available [here](https://www.dropbox.com/sh/tvg7johwjqhqkkz/AADR9SXBoJdvlKJy-z9sVbyGa?dl=0).  
 * Open the emulator and open main.asm. Click "emulate" on the menu and when it's  
   finished compiling it will be ready to run.  
 ![alt-text](https://github.com/0xLeo/asm_shapes/blob/master/img/img1.png)
